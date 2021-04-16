@@ -41,8 +41,11 @@ module.exports = {
         ]
     },
     devServer: {
-        port: 4200,
-        hot: isDev
+        port: 8080,
+        hot: isDev,
+        publicPath: "/",
+        contentBase: "./public",
+        hot: true
     },
     plugins: [
         new HtmlWebPackPlugin({
